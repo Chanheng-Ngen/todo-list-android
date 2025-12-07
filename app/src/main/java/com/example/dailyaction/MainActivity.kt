@@ -10,6 +10,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.add_task_activity)
+        setContentView(R.layout.setting_activity)
     }
 }

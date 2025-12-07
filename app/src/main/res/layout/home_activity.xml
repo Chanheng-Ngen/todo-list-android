@@ -165,7 +165,23 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sort by"/>
+                android:text="Sort by"
+                android:textSize="14dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:padding="0dp"
+                app:cornerRadius="5dp"
+                app:backgroundTint="@color/black10"
+                android:textColor="@color/black90"
+                android:textSize="14sp"
+                app:icon="@drawable/angle_down"
+                app:iconTint="@color/black0"
+                android:text="Date"
+                app:iconGravity="end"
+                app:iconPadding="8dp"
+                android:layout_marginStart="7dp"
+                />
         </LinearLayout>
 
     </LinearLayout>
@@ -179,21 +195,21 @@
         android:layout_height="match_parent"
         android:background="@color/black10">
 
-        <TextView
-            android:id="@+id/message_task"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="No tasks yet. Create your first task!"
-            android:textAlignment="center"
-            android:textColor="@color/black50"
-            android:textSize="16sp"
-            android:layout_marginTop="25dp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/message_task"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="No tasks yet. Create your first task!"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/black50"-->
+<!--            android:textSize="16sp"-->
+<!--            android:layout_marginTop="25dp"/>-->
         <androidx.cardview.widget.CardView
             android:layout_below="@+id/message_task"
             android:id="@+id/task_01"
             android:layout_width="match_parent"
             android:layout_height="111dp"
-            app:cardCornerRadius="16dp"
+            app:cardCornerRadius="8dp"
             android:layout_margin="24dp"
             app:contentPadding="14dp"
             app:cardElevation="2dp">
@@ -244,8 +260,9 @@
                             app:contentPaddingRight="6dp"
                             app:contentPaddingTop="4dp"
                             app:contentPaddingBottom="4dp"
-                            app:cardBackgroundColor="@color/blue500"
+                            app:cardBackgroundColor="@color/blue200"
                             app:cardCornerRadius="6dp"
+                            app:cardElevation="0dp"
                             >
                             <TextView
                                 android:layout_width="wrap_content"
@@ -290,7 +307,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="24dp"
-            app:backgroundTint="@color/blue500"
+            app:backgroundTint="@color/green"
             app:iconSize="24dp"
             app:cornerRadius="30dp"
             app:icon="@drawable/create_icon"
