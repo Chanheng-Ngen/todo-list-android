@@ -1,15 +1,22 @@
 package com.example.dailyaction
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.dailyaction.databinding.ActivityWelcomeBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(){
+    private lateinit var binding: ActivityWelcomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.setting_activity)
+//      Setup UI
+        binding = ActivityWelcomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+//      Delay 2s for navigation to HomeActivity
+        Handler().postDelayed({
+            val intent = Intent(this@MainActivity, HomeActivity::class.java)
+            startActivity(intent)
+        }, 3000)
     }
 }

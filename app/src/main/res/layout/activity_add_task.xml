@@ -22,6 +22,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/backFromCreateTask"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/back_icon"
@@ -167,10 +168,11 @@
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancel"
                 android:layout_width="0dp"
                 android:layout_height="47dp"
                 android:layout_weight="1"
-                android:text="Completed"
+                android:text="Cancel"
                 android:textColor="@color/blue500"
                 android:textSize="14sp"
                 app:backgroundTint="@android:color/transparent"
@@ -180,11 +182,12 @@
                 android:layout_marginEnd="4dp"/>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/createTask"
                 android:layout_marginStart="4dp"
                 android:layout_width="0dp"
                 android:layout_height="47dp"
                 android:layout_weight="1"
-                android:text="All"
+                android:text="Create Task"
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 app:backgroundTint="@color/blue500"
